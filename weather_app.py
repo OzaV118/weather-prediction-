@@ -31,7 +31,7 @@ with st.sidebar:
     st.header("📘 About App")
     st.write("Predicts weather type based on environmental conditions using a pre-trained ML model.")
     uploaded_file = st.file_uploader("📁 Upload CSV for Bulk Prediction", type=["csv"])
-
+# build by Oza V 
 # === Input Section ===
 st.header("🔧 Enter Weather Conditions")
 
@@ -63,7 +63,7 @@ def predict_weather(input_data):
     except:
         confidence = None
     return prediction, confidence
-
+# build by Oza V 
 # === Predict Button ===
 if st.button("🔍 Predict Weather"):
     try:
@@ -122,7 +122,7 @@ if st.button("🔍 Predict Weather"):
 
     except ValueError:
         st.warning("⚠️ Please enter valid numeric values in all input fields.")
-
+# build by Oza V 
 # === Bulk Prediction ===
 if uploaded_file:
     try:
@@ -153,3 +153,4 @@ if uploaded_file:
 
     except Exception as e:
         st.error(f"❌ Error processing uploaded file: {e}")
+# build by Oza V 
